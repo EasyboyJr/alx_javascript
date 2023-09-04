@@ -6,7 +6,7 @@ const myObject = {
   /*
   YOUR CODE HERE
   */
-myObject.incr = function incr() {
+myObject.incr = function(){
   this.value++;
 };
   myObject.incr();
