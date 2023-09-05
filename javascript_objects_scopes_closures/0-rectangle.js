@@ -1,7 +1,4 @@
 class Rectangle {
+  constructor() {}
   // empty class
 }
-
-module.exports = {
-  Rectangle
-};
