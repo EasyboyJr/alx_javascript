@@ -1,6 +1,7 @@
 class Rectangle {
-  constructor(width, height) {
-    this.width = width;
-    this.height = height;
-  };
+  
 }
+
+Rectangle.prototype.constructor.toString = function() {
+  return [function: ${this.name}];
+};
