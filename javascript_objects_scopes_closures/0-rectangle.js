@@ -1,4 +1,6 @@
 class Rectangle {
-  constructor() {}
+  constructor() {
+    
+  }
   // empty class
 }
