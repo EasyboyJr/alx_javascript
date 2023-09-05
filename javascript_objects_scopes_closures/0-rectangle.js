@@ -1,6 +1,3 @@
-class Rectangle {
-  constructor() {
-    
-  }
-  // empty class
+function Rectangle() {
+  
 }
