@@ -5,7 +5,9 @@ class Rectangle {
             this.width = w;
             this.height = h;
         } else {
-            return {}
+            const emptyObject = Object.create(null);
+            emptyObject.constructor = Rectangle;
+            return emptyObject;
         }
     }
 }
