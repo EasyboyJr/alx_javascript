@@ -9,8 +9,6 @@ request.get(url, (error, response, body) => {
     fs.writeFile(file, body, 'utf-8', (error) => {
         if (error) {
             console.error('Error:', error);
-        } else {
-            console.log('sucess');
         }
     })
 })
