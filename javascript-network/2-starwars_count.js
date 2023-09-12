@@ -7,7 +7,7 @@ request.get(url, (error, response, body) => {
     }
     const data = JSON.parse(body);
     const includeWedge = data.results.filter(movie => {
-        return movie.characters.includes('https://swapi-api.alx-tools.com/api/people/' + id + '/');
+        return movie.characters.some(characterUrl => characterUrl.includes('/' + id + '/'));
     })
     console.log(includeWedge.length);
 })
