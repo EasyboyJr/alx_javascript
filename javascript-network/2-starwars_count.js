@@ -7,7 +7,12 @@ request.get(url, (error, response, body) => {
     }
     const data = JSON.parse(body);
     const includeWedge = data.results.filter(movie => {
+<<<<<<< HEAD
         return movie.characters.some(characterUrl => characterUrl.include('/' + id + '/'));
     });
+=======
+        return movie.characters.some(characterUrl => characterUrl.includes('/' + id + '/'));
+    })
+>>>>>>> 05421ab316c2e75eb9ae7a897139a619e1ded022
     console.log(includeWedge.length);
 })
